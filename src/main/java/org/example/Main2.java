@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Scanner;
 
 // 문제 : `안녕하세요.`를 10번 출력해주세요.
 
@@ -652,53 +653,72 @@ package org.example;
 //    }
 //}
 
+//class Main {
+//    public static void main(String[] args) {
+//        // 문제6. 1부터 5까지의 합을 더한 결과를 출력해주세요.
+//        System.out.println("===문제6===");
+//        int sum = 0;
+//        for (int i = 1; i <= 5; i++) {
+//            sum += i;
+//        }
+//        System.out.println(sum);
+//
+//        //문제7. -100부터 25까지의 합을 출력해주세요.
+//        System.out.println("\n===문제7===");
+//
+//        sum = 0;
+//        for (int i = -100; i <= 25; i++) {
+//            sum += i;
+//        }
+//        System.out.println(sum);
+//
+//        //문제8. 1부터 3까지 출력하는 작업을 10번 해주세요.
+//        //조건 : 이중 for문 사용
+//        System.out.println("\n===문제8===");
+//
+//        for (int i = 1; i <= 10; i++) {
+//            for (int j = 1; j <= 3; j++) {
+//                System.out.println(j);
+//            }
+//            System.out.printf("%d번째 출력\n", i);
+//        }
+//
+//        System.out.println("\n===문제9===");
+//        //문제9. 아래의 코드의 결과가 왜 콘솔과 같이 표시되는지 순차적으로, 한글로 서술하시오.
+//        int rows = 5; // 큰 반복문에서 종료조건으로 기능한다.
+//
+//        for (int i = 1; i <= rows; i++) { // 큰 반복문 : i가 rows의 값이 5 이하인지 여부가 참이라면 i를 1씩 증가해가면서 반복한다.
+//            //즉, 1회차 : 1번, 2회차 : 2번, 3회차 : 3번, 4회차 : 4번, 5회차 : 5번, 6회차 : 반복문을 빠져나간다.
+//            for (int k = 1; k <= i; k++) { // 작은 반복문 : k가 현재 i의 값을 초과할 때까지 k를 1씩 증가해가면서 반복한다.
+//                //즉, 1회차 : i의 값이 1(큰 반복문의 실행 회차가 1)이므로 실행과 k값 증가를 1번 반복 후 k값이 2가 되어 반복문 탈출, i의 값이 2이므로 2번...,
+//                //i의 값이 5이므로 실행과 k값 증가를 5번 반복 후 k값이 6이 되어 반복문 탈출
+//                //큰 반복문이 5번 반복된 후, i의 값이 6이 되었을 때는 큰 반복문 자체가 실행되지 않으므로 실행되지 않는다.
+//                System.out.print("* "); // 위에서 적은 회차별로, 작은 반복문이 반복되는 횟수만큼 이 줄을 실행한다.
+//                //'print'를 사용하였으므로 줄바꿈 없이 반복되는 횟수만큼 한 줄에 출력된다.
+//            }
+//            System.out.println(); // 큰 반복문이 반복되는 횟수만큼 이 줄을 실행한다.
+//            //작은 반복문의 실행 후, println으로 엔터값을 출력해 줄을 바꿔준다.
+//            //이때 출력되는 엔터값은 작은 반복문에서 반복된 마지막 * 옆에 붙어서 출력되므로 끝에서 줄바꿈이 된다.
+//        }
+//    }
+//}
+
+//스캐너 사용하기
+
+
+
 class Main {
     public static void main(String[] args) {
-        // 문제6. 1부터 5까지의 합을 더한 결과를 출력해주세요.
-        System.out.println("===문제6===");
-        int sum = 0;
-        for (int i = 1; i <= 5; i++) {
-            sum += i;
-        }
-        System.out.println(sum);
+        Scanner inputNum = new Scanner(System.in); // Scanner는 참조타입 변수이므로 클래스를 참조해와야한다.
+        Scanner inputLine = new Scanner(System.in);
+        //JDK = Java Development Kit = 자바 개발 도구 (개발할 때 도움을 주는 애들) - 라이브러리 안에 들어있다.
 
-        //문제7. -100부터 25까지의 합을 출력해주세요.
-        System.out.println("\n===문제7===");
+        int num = inputNum.nextInt();
+        System.out.println(num);
 
-        sum = 0;
-        for (int i = -100; i <= 25; i++) {
-            sum += i;
-        }
-        System.out.println(sum);
-
-        //문제8. 1부터 3까지 출력하는 작업을 10번 해주세요.
-        //조건 : 이중 for문 사용
-        System.out.println("\n===문제8===");
-
-        for (int i = 1; i <= 10; i++) {
-            for (int j = 1; j <= 3; j++) {
-                System.out.println(j);
-            }
-            System.out.printf("%d번째 출력\n", i);
-        }
-
-        System.out.println("\n===문제9===");
-        //문제9. 아래의 코드의 결과가 왜 콘솔과 같이 표시되는지 순차적으로, 한글로 서술하시오.
-        int rows = 5; // 큰 반복문에서 종료조건으로 기능한다.
-
-        for (int i = 1; i <= rows; i++) { // 큰 반복문 : i가 rows의 값이 5 이하인지 여부가 참이라면 i를 1씩 증가해가면서 반복한다.
-            //즉, 1회차 : 1번, 2회차 : 2번, 3회차 : 3번, 4회차 : 4번, 5회차 : 5번, 6회차 : 반복문을 빠져나간다.
-            for (int k = 1; k <= i; k++) { // 작은 반복문 : k가 현재 i의 값을 초과할 때까지 k를 1씩 증가해가면서 반복한다.
-                //즉, 1회차 : i의 값이 1(큰 반복문의 실행 회차가 1)이므로 실행과 k값 증가를 1번 반복 후 k값이 2가 되어 반복문 탈출, i의 값이 2이므로 2번...,
-                //i의 값이 5이므로 실행과 k값 증가를 5번 반복 후 k값이 6이 되어 반복문 탈출
-                //큰 반복문이 5번 반복된 후, i의 값이 6이 되었을 때는 큰 반복문 자체가 실행되지 않으므로 실행되지 않는다.
-                System.out.print("* "); // 위에서 적은 회차별로, 작은 반복문이 반복되는 횟수만큼 이 줄을 실행한다.
-                //'print'를 사용하였으므로 줄바꿈 없이 반복되는 횟수만큼 한 줄에 출력된다.
-            }
-            System.out.println(); // 큰 반복문이 반복되는 횟수만큼 이 줄을 실행한다.
-            //작은 반복문의 실행 후, println으로 엔터값을 출력해 줄을 바꿔준다.
-            //이때 출력되는 엔터값은 작은 반복문에서 반복된 마지막 * 옆에 붙어서 출력되므로 끝에서 줄바꿈이 된다.
-        }
+        String line = inputLine.nextLine();
+        System.out.println(line);
+        //사용자가 입력한 값을 받아서 변수값으로 사용한다.
     }
 }
 
