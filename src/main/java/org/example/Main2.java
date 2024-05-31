@@ -705,8 +705,6 @@ import java.util.Scanner;
 
 //스캐너 사용하기
 
-
-
 class Main {
     public static void main(String[] args) {
         Scanner inputNum = new Scanner(System.in); // Scanner는 참조타입 변수이므로 클래스를 참조해와야한다.
