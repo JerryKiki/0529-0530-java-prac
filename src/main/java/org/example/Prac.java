@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Prac {
     public static void main(String[] args) {
-
+        //코드업 문제 푸는 중... 계속 수정됨
         Scanner sc = new Scanner(System.in);
-        long input = sc.nextLong();
-
-        System.out.printf("%d", input);
+        String input = sc.nextLine();
+        int hex = Integer.parseInt(input, 16);
+        System.out.printf("%o", hex);
 
 
 //        /* 필기
