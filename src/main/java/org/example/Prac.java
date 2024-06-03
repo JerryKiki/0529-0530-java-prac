@@ -5,7 +5,35 @@ import java.util.Scanner;
 class Prac {
     public static void main(String[] args) {
         //0603
-        boolean[] arr1 = new boolean[]{true, false, true};
+
+        myObject a = new myObject();
+        a.num1 = 100;
+        a.num2 = 200;
+        a.b = true;
+        a.d = 170.3;
+        a.s = "출력 끝";
+
+        System.out.println(a.num1);
+        System.out.println(a.num2);
+        System.out.println(a.b);
+        System.out.println(a.d);
+        System.out.println(a.s);
+    }
+}
+
+class myObject {
+    int num1;
+    int num2;
+    boolean b;
+    double d;
+    String s;
+}
+
+
+
+
+
+        /*boolean[] arr1 = new boolean[]{true, false, true};
         double[] arr2 = new double[]{3.14, 7.77, 11.11};
         int[] arr3 = new int[10];
 
@@ -21,7 +49,7 @@ class Prac {
         for (int i = 0; i < arr3.length; i++) {
             arr3[i] = i + 1;
             System.out.printf("arr3[%d]의 값 : %d\n", i, arr3[i]);
-        }
+        }*/
 
 
 
@@ -76,5 +104,3 @@ class Prac {
 //        System.out.printf("합 : %d\n", arrSum );
 //        System.out.println("평균 : " + arrAvg);
 //        System.out.printf("평균 : %d\n", arrAvg );
-    }
-}
