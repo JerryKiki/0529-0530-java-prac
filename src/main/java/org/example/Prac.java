@@ -2,16 +2,44 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Prac {
+class Prac {
     public static void main(String[] args) {
-        //코드업 문제 푸는 중... 계속 수정됨
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        int hex = Integer.parseInt(input, 16);
-        System.out.printf("%o", hex);
+        //0603
+        boolean[] arr1 = new boolean[]{true, false, true};
+        double[] arr2 = new double[]{3.14, 7.77, 11.11};
+        int[] arr3 = new int[10];
+
+        //i를 여러번 쓸 수 있는 이유 : for문 안에서 생성되어 for문이 끝나면 삭제되기 때문에
+        for (int i = 0; i < 3; i++) {
+            System.out.printf("arr1[%d]의 값 : %s\n", i, arr1[i]);
+        }
+
+        for (int i = 0; i < 3; i++) {
+            System.out.printf("arr2[%d]의 값 : %.2f\n", i, arr2[i]);
+        }
+
+        for (int i = 0; i < arr3.length; i++) {
+            arr3[i] = i + 1;
+            System.out.printf("arr3[%d]의 값 : %d\n", i, arr3[i]);
+        }
 
 
-//        /* 필기
+
+        /*
+        //선언방식 추가    int[] arr = new int[]{10, 20, 30};
+        int[] arr = new int[100];
+        for (int i = 0; i < 100; i++) {
+            arr[i] = i + 1;
+        }
+        int sum = 0;
+        for (int i = 0; i < 100; i++) {
+            sum += arr[i];
+        }
+        System.out.println("sum : " + sum);
+        */
+
+
+//        /* 0531 필기
 //        //int[] arr = new 설계도;
 //        int[] arr = new int[3];
 //        arr[0] = 10;
