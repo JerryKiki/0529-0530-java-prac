@@ -4,22 +4,55 @@ package org.example;
 
 class Prac {
     public static void main(String[] args) {
-        //0604
-        계산기.합(10, 20);
+        //0604 함수의 형태, 매개변수, return의 이해 - 함수의 기본 사용법
+        int rs = 계산기.합(10, 20);
+        System.out.println(rs);
+
+        boolean rs2 = 계산기.is_a_bigger_than_b(10, 20);
+        System.out.println(rs2);
+        rs2 = 계산기.is_a_bigger_than_b(240, 20);
+        System.out.println(rs2);
+        rs2 = 계산기.is_a_bigger_than_b(20, 20);
+        System.out.println(rs2);
+    }
+}
+class 계산기 {
+    static int 합(int a, int b) {
+        return a+b;
+    }
+    static boolean is_a_bigger_than_b(int a, int b) {
+//        if (a > b) {
+//            return true;
+//        }
+//        return false;
+        return a > b;
+    }
+}
+        /*계산기.합(10, 20);
         계산기.합(20, 50);
         계산기.합(40, 40);
         계산기.합(9);
+        int a = 계산기.합리턴(90, 10);
+        System.out.println(a);
+        int b = 계산기.고정값리턴();
+        System.out.println(b);
     }
 }
 
 class 계산기 {
+    static int 합리턴(int c, int d) {
+        return c;
+    }
+    static int 고정값리턴(){
+        return 10;
+    }
     static void 합(int c) {
         System.out.println(c);
     }
     static void 합(int a, int b) {
         System.out.println(a + b);
     }
-}
+}*/
 // 문제 : 아래 코드가 실행되도록 자동차 클래스를 만들어주세요.
 //        자동차.달리다();
 //    }
