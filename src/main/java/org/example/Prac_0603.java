@@ -2,10 +2,10 @@ package org.example;
 
 public class Prac_0603 {
     public static void main(String[] args){
-        //문제2. 자동차 객체를 담을 변수를 만들어주세요.
+        //문제2. 자동차 객체와 연결될 변수를 만들어주세요.
         CarMake car1;
         CarMake car2;
-        //문제3. 자동차 객체를 만들고 변수에 담아주세요.
+        //문제3. 자동차 객체를 만들고 변수와 연결해주세요.
         car1 = new CarMake();
         car2 = new CarMake();
 
@@ -67,7 +67,7 @@ class CarMake {
     //문제9. 번호가 다른 각각의 자동차가 서로 다른 최고속력으로 달리게 해주세요.
     void run()
     {
-        System.out.printf("%s 자동차가 최고속력 %.0fkm로 달립니다.\n", name, maxSpeed);
+        System.out.printf("%s 자동차가 최고속력 %.0fkm로 달립니다.\n", this.name, this.maxSpeed);
     }
 }
 

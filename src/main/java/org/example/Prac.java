@@ -1,11 +1,37 @@
 package org.example;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 class Prac {
     public static void main(String[] args) {
-        //0603
+        //0604
+        계산기.합(10, 20);
+        계산기.합(20, 50);
+        계산기.합(40, 40);
+        계산기.합(9);
+    }
+}
 
+class 계산기 {
+    static void 합(int c) {
+        System.out.println(c);
+    }
+    static void 합(int a, int b) {
+        System.out.println(a + b);
+    }
+}
+// 문제 : 아래 코드가 실행되도록 자동차 클래스를 만들어주세요.
+//        자동차.달리다();
+//    }
+//}
+//
+//class 자동차 {
+//    static void 달리다() {
+//        System.out.println("자동차가 달립니다.");
+//    }
+//}
+
+        /*//0603
         myObject a = new myObject();
         a.num1 = 100;
         a.num2 = 200;
@@ -17,17 +43,15 @@ class Prac {
         System.out.println(a.num2);
         System.out.println(a.b);
         System.out.println(a.d);
-        System.out.println(a.s);
-    }
-}
+        System.out.println(a.s);*/
 
-class myObject {
+/* class myObject {
     int num1;
     int num2;
     boolean b;
     double d;
     String s;
-}
+}*/
 
 
 
