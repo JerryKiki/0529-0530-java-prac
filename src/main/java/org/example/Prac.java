@@ -5,18 +5,18 @@ package org.example;
 class Prac {
     public static void main(String[] args) {
         //0604 함수의 형태, 매개변수, return의 이해 - 함수의 기본 사용법
-        int rs = 계산기.합(10, 20);
+        int rs = Calculator.합(10, 20);
         System.out.println(rs);
 
-        boolean rs2 = 계산기.is_a_bigger_than_b(10, 20);
+        boolean rs2 = Calculator.is_a_bigger_than_b(10, 20);
         System.out.println(rs2);
-        rs2 = 계산기.is_a_bigger_than_b(240, 20);
+        rs2 = Calculator.is_a_bigger_than_b(240, 20);
         System.out.println(rs2);
-        rs2 = 계산기.is_a_bigger_than_b(20, 20);
+        rs2 = Calculator.is_a_bigger_than_b(20, 20);
         System.out.println(rs2);
     }
 }
-class 계산기 {
+class Calculator {
     static int 합(int a, int b) {
         return a+b;
     }
