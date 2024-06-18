@@ -1,8 +1,8 @@
-package org.prac0618_13;
+package org.prac0618_14_hw;
 
-// 문제 : 아래가 실행되도록 해주세요.
+// 아래의 코드가 실행되도록 해주세요
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         전사 a전사 = new 전사();
 
@@ -15,48 +15,43 @@ class Main {
         a전사.자기소개();
 
         a전사.나이 = 30;
-        a전사.이름 = "카니";
+        a전사.이름 = "진";
         a전사.자기소개();
 
         a전사.a무기 = new 활();
         a전사.공격();
-        // 출력 : 카니가 활로 공격합니다.
+        //출력 : 진이 활로 공격합니다.
 
         a전사.a무기 = new 칼();
         a전사.공격();
-        // 출력 : 카니가 칼로 공격합니다.
+        //출력 : 진이 칼로 공격합니다.
     }
 }
 
 class 전사 {
-    // 인스턴스 변수
+    //인스턴스 변수
     String 이름;
-    // 인스턴스 변수
     int 나이;
-    // 인스턴스 변수
     무기 a무기;
 
     void 자기소개() {
         System.out.println("안녕하세요. 저는 " + this.나이 + "살 " + this.이름 + " 입니다.");
     }
+
     void 공격() {
-        this.a무기.attack(this.이름);
+        String 공격방식 = this.a무기.attack();
+        System.out.println(this.이름 + "이(가) " + 공격방식);
     }
 }
 
 class 무기 {
-    public void attack(String userName) {}
+    String attack() { return "공격합니다."; }
 }
 
 class 칼 extends 무기 {
-    public void attack(String userName) {
-        System.out.println(userName + "가 칼로 공격합니다.");
-    }
+    String attack() { return "칼로 공격합니다."; }
 }
 
 class 활 extends 무기 {
-    public void attack(String userName) {
-        System.out.println(userName + "가 활로 공격합니다.");
-    };
+    String attack() { return "활로 공격합니다."; }
 }
-
