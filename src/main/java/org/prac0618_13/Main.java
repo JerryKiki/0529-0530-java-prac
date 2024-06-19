@@ -23,8 +23,9 @@ class Main {
         // 출력 : 카니가 활로 공격합니다.
 
         a전사.a무기 = new 칼();
+        a전사.이름 = "철수";
         a전사.공격();
-        // 출력 : 카니가 칼로 공격합니다.
+        // 출력 : 철수가 칼로 공격합니다.
     }
 }
 
@@ -50,13 +51,13 @@ class 무기 {
 
 class 칼 extends 무기 {
     public void attack(String userName) {
-        System.out.println(userName + "가 칼로 공격합니다.");
+        System.out.println(userName + "(이)가 칼로 공격합니다.");
     }
 }
 
 class 활 extends 무기 {
     public void attack(String userName) {
-        System.out.println(userName + "가 활로 공격합니다.");
+        System.out.println(userName + "(이)가 활로 공격합니다.");
     };
 }
 
