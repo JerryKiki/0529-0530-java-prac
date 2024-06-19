@@ -8,11 +8,11 @@ public class Main {
 
         Article[] articles = new Article[10];
 
-        //1번 방식의 리모콘 전달 (변수에 한번 객체의 리모콘을 전달 후 그 변수에서 다시 배열에 리모콘을 전달)
+        //1번 방식의 리모콘 전달 (변수에 한번 새로 만들어진 객체의 리모콘을 전달 후 그 변수에서 다시 배열에 리모콘을 전달)
         Article article1 = new Article(); //생성자 1번 호출
         articles[0] = article1;
         System.out.println(article1.id);
-        //2번 방식의 리모콘 전달 (배열에 바로 객체의 리모콘을 전달)
+        //2번 방식의 리모콘 전달 (배열에 바로 새로 만들어진 객체의 리모콘을 전달)
         articles[1] = new Article();
         System.out.println(articles[1].id);
         //1, 2번 방식의 전달방식 차이 숙지(오늘 그린 이미지 참고)
