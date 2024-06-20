@@ -11,7 +11,8 @@ public class Main {
     //개선 2번
     static void v3() {
         System.out.println("==v3~v4==");
-        //ArrayList<Article> articles = new ArrayList<Article>(); //저장소를 만들 때 Article의 리모콘만 넣겠다고 제약사항을 설정해줌 : <> == 제네릭
+        //ArrayList<Article> articles = new ArrayList<Article>();
+        //위 코드는 저장소를 만들 때 Article의 리모콘만 넣겠다고 제한사항을 설정해준 것(=제네릭해줌) : <> == 제네릭(제한사항)
         //위는 공부용(v3), 실제로 쓰는 방식
         List<Article> articles = new ArrayList<>(); //ArrayList는 List에게서 상속을 받기에 가능한 문법.
 
