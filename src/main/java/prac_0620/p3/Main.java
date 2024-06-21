@@ -75,7 +75,7 @@ class 계산기 {
     }
 }
 
-//참고 : if(b==0) { throw new illegalargumentexception("0으로 나눌 수 없습니다.) }와 같이 try catch문이 아니라 강제 오류 발생을 시켜줄 수도 있다.
+//참고 : if(b==0) { throw new illegalargumentexception("0으로 나눌 수 없습니다.") }와 같이 try catch문이 아니라 강제 오류 발생을 시켜줄 수도 있다.
 //올바른 인자값이 주어지지 않았을 때 쓰는 것.
 //이때는 내 예외 클래스를 만들어줘야함.
 //아래는 예외 클래스를 만들때의 규칙.
